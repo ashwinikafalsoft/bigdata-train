@@ -1,0 +1,13 @@
+Run Hadoop MapReduce Job
+hadoop jar wcmapred_demo-0.0.1-SNAPSHOT.jar kafalsoft.wcmapred_demo.Driver /user/root/mapred-app/mapred-input.txt /user/root/mapred-app/mapred-output
+
+
+
+[root@sandbox ~]# grep 'server.jdbc.user.passwd' /etc/ambari-server/conf/ambari.properties
+server.jdbc.user.passwd=/etc/ambari-server/conf/password.dat
+ 
+[root@sandbox ~]# cat /etc/ambari-server/conf/password.dat
+bigdata
+
+
+

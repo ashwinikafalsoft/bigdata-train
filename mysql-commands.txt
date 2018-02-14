@@ -1,0 +1,36 @@
+[root@sandbox ~]# grep 'server.jdbc.user.passwd' /etc/ambari-server/conf/ambari.properties
+server.jdbc.user.passwd=/etc/ambari-server/conf/password.dat
+ 
+[root@sandbox ~]# cat /etc/ambari-server/conf/password.dat
+bigdata
+
+
+
+
+MYSQL (RETAIL_DB example)
+
+ mysql -u root -p
+ password: hadoop
+ 
+ create database retail_db;
+ 
+ use retail_db;
+ 
+ source /root/data/retail_db.sql;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ //create user retail_dba identified by 'hadoop';
+ 
+ //select USER from mysql.user;
+ 
+ //grant all on retail_db.* to retail_dba;
+
